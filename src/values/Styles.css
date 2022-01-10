@@ -1,0 +1,16 @@
+ .table{
+ -fx-background-color:transparent;
+ -fx-border-color:black;
+}
+.column{
+
+-fx-background-color:#0589ff;
+-fx-border-color:black;
+-fx-color:#ffffff;
+}
+.singusername{
+    -fx-color: white;
+}
+.singpassword{
+    -fx-color: white;
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MenuMain" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: transparent; -fx-border-color: #0589ff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FController.controllercommande">
+   <children>
+      <TableView fx:id="table" layoutX="118.0" layoutY="117.0" prefHeight="367.0" prefWidth="765.0" stylesheets="@../Style/Style.css">
+        <columns>
+          <TableColumn fx:id="idplat" minWidth="170.0" prefWidth="208.0" styleClass="column" text="numplat" />
+          <TableColumn fx:id="nplat" prefWidth="175.0" styleClass="column" text="nomplat" />
+            <TableColumn fx:id="prix" prefWidth="186.0" styleClass="column" text="prix" />
+            <TableColumn fx:id="tel" prefWidth="192.0" styleClass="column" text="quantite" />
+        </columns>
+         <styleClass>
+            <String fx:value="table" />
+            <String fx:value="table" />
+         </styleClass>
+      </TableView>
+      <Button layoutX="35.0" layoutY="24.0" mnemonicParsing="false" onAction="#mescommandes" prefHeight="37.0" prefWidth="128.0" style="-fx-background-color: #0589ff;" text="mes commandes" textFill="#f8f4f4">
+         <font>
+            <Font name="Cambria Bold Italic" size="14.0" />
+         </font></Button>
+      <Button layoutX="633.0" layoutY="502.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: #0589ff;" text="Valider" textFill="#fffefe">
+         <font>
+            <Font name="Cambria Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="470.0" layoutY="502.0" mnemonicParsing="false" onAction="#deletecommande" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: #0589ff;" text="Supprimer" textFill="#f2ebeb">
+         <font>
+            <Font name="Cambria Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <TextField layoutX="794.0" layoutY="26.0" prefHeight="30.0" prefWidth="167.0" promptText="Rechercher" style="-fx-border-color: #0589ff;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="704.0" layoutY="26.0" mnemonicParsing="false" onAction="#rechercher" prefHeight="32.0" prefWidth="90.0" style="-fx-background-color: #0589ff;" text="Rechercher" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="309.0" layoutY="502.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: #0589ff;" text="ajouter" textFill="#f2ebeb">
+         <font>
+            <Font name="Cambria Bold Italic" size="14.0" />
+         </font></Button>
+      <Button layoutX="154.0" layoutY="502.0" mnemonicParsing="false" onAction="#retourn" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: #0589ff;" text="retourner" textFill="#f2ebeb">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="95.0" fitWidth="527.0" layoutX="170.0" layoutY="6.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../../../Desktop/res.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="254.0" layoutY="19.0" prefHeight="69.0" prefWidth="359.0" text="les commandes">
+         <font>
+            <Font name="System Bold Italic" size="47.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7819905213270142" startX="1.0" startY="0.8199052132701422">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.018884016200900078" green="0.8157894611358643" blue="0.09857456386089325" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button layoutX="772.0" layoutY="502.0" mnemonicParsing="false" onAction="#quitter" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: #0589ff;" text="Quitter" textFill="#fffefe">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
